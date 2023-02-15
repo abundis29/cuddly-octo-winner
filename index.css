@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  background-image: url("https://picsum.photos/id/1056/3988/2720");
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+button {
+  outline: none;
+}
+.error {
+  position: absolute;
+  width: 494px;
+  height: 142px;
+  padding: 2px;
+  border: 1px outset #dedede;
+  border-color: #a3a3a3;
+  background-color: #e8e8d8;
+  opacity: 0;
+  animation: display 200ms;
+  animation-fill-mode: forwards;
+}
+.error:nth-of-type(1) {
+  top: 19%;
+  left: 24%;
+  animation-delay: 100ms;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 2px 0 2px;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 0 #fff;
+  line-height: 30px;
+  background-image: -webkit-linear-gradient(left, #0050e0, #3890f8);
+  background-image: -moz-linear-gradient(left, #0050e0, #3890f8);
+  background-image: linear-gradient(left, #0050e0, #3890f8);
+}
+.close-button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  background-color: #e8e8d8;
+}
+.message {
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.message img {
+  float: left;
+  margin-top: -15px;
+  margin-right: 20px;
+}
+.ok {
+  position: absolute;
+  width: 100px;
+  height: 27px;
+  background-color: #e8e8d8;
+  border: 1px solid #2b2b2b;
+  box-shadow: inset -1px -1px 2px rgba(0,0,0,0.7);
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ok:focus > span {
+  border: 1px dotted #000;
+}
+.ok span {
+  display: block;
+  width: 108%;
+  height: 86%;
+  margin-top: -2px;
+  margin-left: -4px;
+  line-height: 17px;
+}
+@-moz-keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
